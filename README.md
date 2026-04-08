@@ -61,7 +61,7 @@ Create a `.env` file in the `client` directory:
 
 ---
 
-## Core Workflows (The "Circle of Life")
+## Core Workflows 
 
 * **Onboarding:** Admin reviews candidate data → Updates status → System generates Employee ID → Triggers onboarding path.
 * **Task Life Cycle:** Admin assigns task → Employee updates status → Cron job monitors for "stale" tasks → Automatic escalation if stuck.
@@ -94,11 +94,11 @@ Create a `.env` file in the `client` directory:
 git clone [https://github.com/KadamAmruta03/WorkflowOrchestrator.git](https://github.com/KadamAmruta03/WorkflowOrchestrator.git)
 cd WorkflowOrchestrator
 ```
-# Install Frontend
+### Install Frontend
 ```bash
 cd client && npm install
 ```
-# Install Backend
+### Install Backend
 ```bash
 cd ../server && npm install
 ```
