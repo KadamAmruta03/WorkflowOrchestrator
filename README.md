@@ -37,19 +37,43 @@ workflow-orchestrator/
 │   └── scripts/                 <-- Cron jobs for Task Escalation
 └── README.md
 ```
+## Environment Variables Configuration
+
+To ensure secure communication between the frontend and backend, the following environment variables must be configured.
+
+### Backend (`.env` - `/server`)
+Create a `.env` file in the `server` directory for local development:
+
+| Variable | Description | Example (Local) |
+| :--- | :--- | :--- |
+| `PORT` | Port for the Express server | `5000` |
+| `MONGO_URI` | MongoDB Connection String | `mongodb+srv://...` |
+| `JWT_SECRET` | Secret key for token generation | `your_secret_key` |
+| `CORS_ORIGIN` | The URL of your frontend | `http://localhost:3000` |
+| `APP_BASE_URL` | Base URL for server-side redirects | `http://localhost:3000` |
+
+### Frontend (`.env` - `/client`)
+Create a `.env` file in the `client` directory:
+
+| Variable | Description | Example (Local) |
+| :--- | :--- | :--- |
+| `REACT_APP_API_BASE_URL` | The URL of your running backend | `http://localhost:5000` |
+
+---
+
 ## Core Workflows (The "Circle of Life")
 
-* **Onboarding:** Admin reviews candidate data $\rightarrow$ Updates status $\rightarrow$ System generates Employee ID $\rightarrow$ Triggers onboarding path.
-* **Task Life Cycle:** Admin assigns task $\rightarrow$ Employee updates status $\rightarrow$ Cron job monitors for "stale" tasks $\rightarrow$ Automatic escalation if stuck.
-* **Communication:** Admin broadcasts announcements $\rightarrow$ Employees view via unread-tracking logic $\rightarrow$ Real-time peer-to-peer chat.
-* **Leave Management:** Employee requests leave $\rightarrow$ Admin reviews via specialized panel $\rightarrow$ Status synchronized across dashboards.
+* **Onboarding:** Admin reviews candidate data → Updates status → System generates Employee ID → Triggers onboarding path.
+* **Task Life Cycle:** Admin assigns task → Employee updates status → Cron job monitors for "stale" tasks → Automatic escalation if stuck.
+* **Communication:** Admin broadcasts announcements → Employees view via unread-tracking logic → Real-time peer-to-peer chat.
+* **Leave Management:** Employee requests leave → Admin reviews via specialized panel → Status synchronized across dashboards.
 
 ---
 
 ## Security & Reliability Features
 
 * **Role-Based Access Control (RBAC):** Strict client-side separation between Admin and Employee panels via protected routes.
-* **Environment Isolation:** Dynamic API switching using `REACT_APP_API_BASE_URL` to ensure zero-config deployment across environments.
+* **Environment Isolation:** Dynamic API switching using `REACT_APP_API_BASE_URL` for seamless deployment across dev/prod environments.
 * **Automated Maintenance:** Integrated `node-cron` for background task tracking and system health checks.
 * **CORS Hardening:** Explicit origin filtering configured on Railway to permit only the verified Vercel production domain.
 
@@ -57,10 +81,8 @@ workflow-orchestrator/
 
 ## Cloud Infrastructure & Deployment
 
-The application utilizes a distributed cloud architecture for maximum uptime and scalability.
-
-* **Frontend (Vercel):** Hosted from the `/client` directory with production builds served via Vercel Edge.
-* **Backend (Railway):** Hosted from the `/server` directory with environment-injected MongoDB connection strings.
+* **Frontend (Vercel):** Hosted from the `/client` directory. Requires setting `REACT_APP_API_BASE_URL` in Vercel Project Settings.
+* **Backend (Railway):** Hosted from the `/server` directory. Requires all `.env` variables added to the Railway Variables tab.
 * **Data Tier (Atlas):** Managed NoSQL clusters providing high-availability data storage.
 
 ---
@@ -71,9 +93,12 @@ The application utilizes a distributed cloud architecture for maximum uptime and
 ```bash
 git clone [https://github.com/KadamAmruta03/WorkflowOrchestrator.git](https://github.com/KadamAmruta03/WorkflowOrchestrator.git)
 cd WorkflowOrchestrator
-
+```
 # Install Frontend
+```bash
 cd client && npm install
-
+```
 # Install Backend
+```bash
 cd ../server && npm install
+```
