@@ -7,7 +7,10 @@
 ![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?style=flat-square&logo=mongodb)
 ![Vercel](https://img.shields.io/badge/Frontend-Vercel-000000?style=flat-square&logo=vercel)
 ![Railway](https://img.shields.io/badge/Backend-Railway-0B0D0E?style=flat-square&logo=railway)
-<div>
+![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+
+</div>
+
 > A full-stack HR automation platform bridging administrators and employees through real-time task management, workforce visibility, and an integrated communication hub.
 
 <div align="center">
@@ -32,7 +35,7 @@
 
 </div>
 
-**🔗 Live Demo:** [workflow-orchestrator.vercel.app](orchestrator-workflow.vercel.app/)
+**🔗 Live Demo:** [workflow-orchestrator.vercel.app](https://orchestrator-workflow.vercel.app/)
 
 ---
 
@@ -57,10 +60,14 @@ Built as a full-stack MERN project to demonstrate end-to-end architecture — fr
 ---
 
 ## Core Workflows
-Onboarding: Candidate → Admin Review → Employee ID Generated → Dashboard Access
-Task: Assigned → In Progress → [Cron Monitor] → Escalated if Stale
-Leave: Employee Request → Admin Review → Status Synced Across Dashboards
-Chat: Admin Broadcasts → Unread Tracking → Peer-to-Peer Messaging
+
+```text
+Onboarding:  Candidate → Admin Review → Employee ID Generated → Dashboard Access
+Task:        Assigned → In Progress → [Cron Monitor] → Escalated if Stale
+Leave:       Employee Request → Admin Review → Status Synced Across Dashboards
+Chat:        Admin Broadcasts → Unread Tracking → Peer-to-Peer Messaging
+```
+
 ---
 
 ## Technical Highlights
