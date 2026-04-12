@@ -8,33 +8,31 @@
 ![Vercel](https://img.shields.io/badge/Frontend-Vercel-000000?style=flat-square&logo=vercel)
 ![Railway](https://img.shields.io/badge/Backend-Railway-0B0D0E?style=flat-square&logo=railway)
 
-</div>
-
 > A full-stack HR automation platform bridging administrators and employees through real-time task management, workforce visibility, and an integrated communication hub.
 
 <div align="center">
 
-  <img width="850" alt="Admin Dashboard" src="YOUR_ADMIN_DASHBOARD_SCREENSHOT_URL" />
+  <img width="850" alt="Admin Dashboard" src="https://github.com/user-attachments/assets/20e500e9-2b67-4946-b334-4d45873d2fc9" />
   <p><i>Admin Dashboard — Workforce analytics and task overview</i></p>
 
   <br/>
 
-  <img width="850" alt="Task Management" src="YOUR_TASK_SCREENSHOT_URL" />
+  <img width="850" alt="Task Management" src="https://github.com/user-attachments/assets/d7523702-54d6-4fb2-8dde-e9c1d3a46954" />
   <p><i>Task Lifecycle — Assignment, tracking, and auto-escalation</i></p>
 
   <br/>
 
-  <img width="850" alt="Employee Panel" src="YOUR_EMPLOYEE_SCREENSHOT_URL" />
-  <p><i>Employee Panel — Personal tasks, leave requests, and chat</i></p>
+  <img width="850" alt="Employee Panel" src="https://github.com/user-attachments/assets/d91bdef1-bec2-4a7f-a86e-f74bb7a1c466" />
+  <p><i>Employee Panel — Personal tasks, leave requests, and communication</i></p>
 
   <br/>
 
-  <img width="850" alt="Communication Hub" src="YOUR_CHAT_SCREENSHOT_URL" />
+  <img width="850" alt="Communication Hub" src="https://github.com/user-attachments/assets/a21e3087-605c-4199-a7ea-416e5ba3c55b" />
   <p><i>Communication Hub — Announcements and peer-to-peer chat</i></p>
 
 </div>
 
-**🔗 Live Demo:** [workflow-orchestrator.vercel.app](https://workflow-orchestrator.vercel.app/)
+**🔗 Live Demo:** [workflow-orchestrator.vercel.app](orchestrator-workflow.vercel.app/)
 
 ---
 
