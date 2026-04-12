@@ -7,7 +7,7 @@
 ![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?style=flat-square&logo=mongodb)
 ![Vercel](https://img.shields.io/badge/Frontend-Vercel-000000?style=flat-square&logo=vercel)
 ![Railway](https://img.shields.io/badge/Backend-Railway-0B0D0E?style=flat-square&logo=railway)
-
+<div>
 > A full-stack HR automation platform bridging administrators and employees through real-time task management, workforce visibility, and an integrated communication hub.
 
 <div align="center">
