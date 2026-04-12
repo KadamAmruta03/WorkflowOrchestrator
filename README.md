@@ -7,7 +7,6 @@
 ![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?style=flat-square&logo=mongodb)
 ![Vercel](https://img.shields.io/badge/Frontend-Vercel-000000?style=flat-square&logo=vercel)
 ![Railway](https://img.shields.io/badge/Backend-Railway-0B0D0E?style=flat-square&logo=railway)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
 </div>
 
@@ -62,10 +61,10 @@ Built as a full-stack MERN project to demonstrate end-to-end architecture — fr
 ## Core Workflows
 
 ```text
-Onboarding:  Candidate → Admin Review → Employee ID Generated → Dashboard Access
-Task:        Assigned → In Progress → [Cron Monitor] → Escalated if Stale
-Leave:       Employee Request → Admin Review → Status Synced Across Dashboards
-Chat:        Admin Broadcasts → Unread Tracking → Peer-to-Peer Messaging
+Onboarding: Candidate → Admin Review → Employee ID Generated → Dashboard Access
+Task: Assigned → In Progress → [Cron Monitor] → Escalated if Stale
+Leave: Employee Request → Admin Review → Status Synced Across Dashboards
+Chat: Admin Broadcasts → Unread Tracking → Peer-to-Peer Messaging
 ```
 
 ---
