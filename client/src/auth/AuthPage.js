@@ -160,10 +160,17 @@ export default function AuthPage() {
           </button>
 
           <div className="auth-hint">
-            {role === 'Admin'
-              ? 'Admin access uses a fixed password. No admin account is created.'
-              : 'Employees sign in using Employee ID. You can set the password only once.'}
-          </div>
+  {role === 'Admin' ? (
+    'Admin access uses a fixed password (admin123). No admin account is created.'
+  ) : (
+    <>
+      <p>Employees sign in using Employee ID. You can set the password only once.</p>
+      <p style={{ marginTop: '4px', fontWeight: '500' }}>
+        Note: You can use the ID and password mentioned above to view the project.
+      </p>
+    </>
+  )}
+</div>
         </form>
       </div>
     </div>
