@@ -146,7 +146,7 @@ export default function AuthPage() {
             <input
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder={role === 'Admin' ? 'Admin password (admin123)' : 'Password'}
+              placeholder={role === 'Admin' ? 'Admin password (admin123)' : 'clerk'}
               type="password"
               required
               autoComplete={mode === 'set_password' ? 'new-password' : 'current-password'}
