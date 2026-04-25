@@ -34,7 +34,7 @@
 
 </div>
 
-**🔗 Live Demo:** [workflow-orchestrator.vercel.app](https://orchestrator-workflow.vercel.app)
+**🔗 Live Demo:** [orchestrator-workflow.vercel.app/](https://orchestrator-workflow.vercel.app)
 
 ---
 
